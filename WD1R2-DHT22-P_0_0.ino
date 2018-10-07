@@ -21,8 +21,8 @@ DHT dht(DHTPIN, DHTTYPE);
    //IP Address of Pecan (Raspberry Pi3)
 IPAddress server_addr(192, 168, 1, 104);
 
-char user[] = "OldJelly";
-char password[] = "JellyFish69";
+char user[] = "******";
+char password[] = "*******";
 
 // MySQL/MariaDB Insert string setup with DB Name.Table Name followed by Columns and then Values to be inserted into Table.
 char INSERT_DATA[] = "INSERT INTO Pecan_PRD.RmtDHT_01 (SensorInfo, SensorTemp, SensorHumid, SensorHI) VALUES ('Pecan Sensor',%s,%s,%s)";
@@ -34,8 +34,8 @@ char hum2[10];
 char heat2[10];
 
 // EZP8266 WiFi Credentials
-char ssid[] = "Pretzel_Shark"; // SSID NAME
-char pass[] = "190497PrB"; // SSID PASSWORD
+char ssid[] = "**********"; // SSID NAME
+char pass[] = "**********"; // SSID PASSWORD
 
 WiFiClient client;
 MySQL_Connection conn((Client *)&client);
